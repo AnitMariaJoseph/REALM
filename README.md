@@ -14,3 +14,6 @@ This website consists of mainly four pages:
 •	Contact us :This page gives the user a chance to provide feedback about the dealing and the website in general. It will also include the necessary contact details of the firm.
 PRELIMINARY DESIGN:
 This website will be created and designed using HTML, CSS and JavaScript. 
+SUMMARY
+This project deals with a real estate website called REALM. It is built with the help of HTML, CSS, and JavaScript. It consists of four pages, which contains forms, tables, images, links and so on. JavaScript is used for calling up the sign in form in the home page and to display an alert box in the help page. CSS is used widely to format the HTML elements and bring them in an order and to maintain consistency. A video, is also embedded from YouTube, showing the interior of a house. Also JavaScript function is used to make an automatic slideshow which repeats after a fixed time interval. Also the realtor page has a repeating background picture and services page has separate section for both buying and selling.
+
