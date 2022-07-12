@@ -1,0 +1,234 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="styles1.css" rel="stylesheet" />
+          <title>realtors</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
+    <style>
+        html {
+            background-color: lightslategray;
+        }
+
+        header {
+            height: 500px;
+            width: 1500px;
+            background-image: url(home24.jpg);
+            background-repeat: no-repeat;
+            background-position: 50% 0%;
+            background-size: 1500px 500px;
+            background-clip: content-box;
+            font-family: 'Cinzel', serif;
+            font-size: 16px;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        footer {
+            clear: left;
+            width: 105%;
+            color: white;
+            font-size: 0.7em;
+            text-align: center;
+            padding: 25px;
+        }
+
+        body > footer > nav.vertical, body > footer > li {
+            float: left;
+            width: 100%;
+        }
+
+            body > footer > nav.vertical > ul {
+                line-height: 2em;
+            }
+
+        footer nav a {
+            text-decoration: underline;
+        }
+
+        footer a:visited, footer a:link {
+            color: white;
+        }
+
+        footer a:hover, footer a:active {
+            color: white;
+        }
+
+        footer::after {
+            clear: both;
+            content: "";
+            display: table;
+        }
+        div#searchbar {
+            clear: left;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0px;
+            padding: 0px;
+            overflow: hidden;
+            background-color: darkred;
+            border-top: 0px;
+        }
+
+        li {
+            float: left;
+        }
+
+            li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 10px;
+                line-height: 1.5em;
+                font-size: 1.1em;
+                text-decoration: none;
+                float: left;
+                width: 27em;
+            }
+
+                li a:hover {
+                    background-color: #111111;
+                }
+
+        section {
+            background-image: url(realtors.jpeg);
+            background-size: 190px;
+            background-repeat: repeat;
+        }
+
+        form {
+            background-color: blueviolet;
+        }
+
+        input[type=text], select {
+            width: 90%;
+            padding: 15px;
+            margin: 5px 0 22px 0;
+            display: inline-block;
+            border: none;
+            background: #f1f1f1;
+        }
+
+            input[type=text]:focus, select:focus {
+                background-color: #ddd;
+                outline: none;
+            }
+
+        /* On smaller screens, decrease text size */
+        @media only screen and (max-width: 300px) {
+            .text {
+                font-size: 11px
+            }
+        }
+
+        button:hover {
+            opacity: 1;
+        }
+
+        /* Extra styles for the cancel button */
+        .search {
+            padding: 14px 20px;
+            background-color: #f44336;
+        }
+
+        /* Float cancel and signup buttons and add an equal width */
+        .search {
+            float: left;
+            width: 30%;
+            margin-left: 180px;
+        }
+
+
+        /* Clear floats */
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+
+        h1:hover {
+            font-size: 50px;
+            word-spacing: 40px;
+        }
+
+        /* Change styles for cancel button and signup button on extra small screens */
+        @media screen and (max-width: 300px) {
+            .search {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html">HOME </a> </li>
+                <li><a href="services.html">SERVICES </a> </li>
+                <li><a href="realtors.html">REALTORS </a></li>
+                <li><a href="help.html">HELP</a></li>
+            </ul>
+        </nav>
+        <h1 style="font-size:4em; text-align:center; color:floralwhite; letter-spacing:0.6em;">REALM</h1>
+        <h3 style="font-size:2em; text-align:center; color:white; "><marquee>YoUr ChOiCe HoMe....</marquee> </h3>
+
+
+    </header>
+
+    <h1 style="color:white;text-align:center;">REALTOR SEARCH</h1>
+    <section>
+        <form name="realtor" method="post" style="width:600px; height:430px; text-align:center;  background-color:darkred; margin-left:450px;">
+            <fieldset>
+                <label for="province">PROVINCE</label>
+                <select name="province" id="province">
+                    <option value="all">All Provinces</option>
+                    <option value="one">Alberta</option>
+                    <option value="two">Brtish Columbia</option>
+                    <option value="three">Manitoba</option>
+                    <option value="four">New Brunswick</option>
+                    <option value="five">Newfoundland & Labrador</option>
+                    <option value="six">Northwest Territories</option>
+                    <option value="seven">Nova Scotia</option>
+                    <option value="eight">Nunavat</option>
+                    <option value="nine">Ontario</option>
+                    <option value="ten">Prince Edward Island</option>
+                    <option value="eleven">Quebec</option>
+                    <option value="twelve">Saskatchewan</option>
+                    <option value="thirteen">Yukon</option>
+
+                </select><br />
+                <label for="city">CITY</label><br />
+                <input name="city" id="city" type="text" placeholder="Enter city" /><br>
+                <label for="firstname">FIRST NAME</label>
+                <input name="firstname" id="firstname" type="text" placeholder="Enter first name" /><br />
+                <label for="lastname">LAST NAME</label>
+                <input name="lastname" id="lastname" type="text" placeholder="Enter last name" /><br />
+                <div class="clearfix">
+
+                    <button type="submit" class="search">SEARCH</button>
+                </div>
+            </fieldset>
+        </form>
+    </section>
+
+    <footer>
+
+        <nav class="vertical">
+            <ul>
+                <li><a href="home.html">HOME </a> </li>
+                <li><a href="services.html">SERVICES </a> </li>
+                <li><a href="realtors.html">REALTORS </a></li>
+                <li><a href="help.html">HELP</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,428 @@
+﻿<!DOCTYPE html>
+
+<html >
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Services</title>
+    <link href="styles1.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
+    <style>
+        html {
+            background-color: lightslategray;
+        }
+
+        header {
+            height: 500px;
+            width: 1500px;
+            background-image: url(home24.jpg);
+            background-repeat: no-repeat;
+            background-position: 50% 0%;
+            background-size: 1500px 500px;
+            background-clip: content-box;
+            font-family: 'Cinzel', serif;
+            font-size: 16px;
+            margin: 0px;
+            padding: 0px;
+        }
+        footer {
+            clear: left;
+            width: 100%;
+            color: white;
+            font-size: 0.7em;
+            text-align: center;
+            padding: 25px;
+            margin-top:70px;
+        }
+
+        body > footer > nav.vertical, body > footer > li {
+            float: left;
+            width: 100%;
+        }
+
+            body > footer > nav.vertical > ul {
+                line-height: 2em;
+            }
+
+        footer nav a {
+            text-decoration: underline;
+        }
+
+        footer a:visited, footer a:link {
+            color: white;
+        }
+
+        footer a:hover, footer a:active {
+            color: white;
+        }
+
+        footer::after {
+            clear: both;
+            content: "";
+            display: table;
+        }
+
+        div#searchbar {
+            clear: left;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0px;
+            padding: 0px;
+            overflow: hidden;
+            background-color: darkred;
+            border-top: 0px;
+        }
+
+        li {
+            float: left;
+        }
+
+            li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 10px;
+                line-height: 1.5em;
+                font-size: 1.1em;
+                text-decoration: none;
+                float: left;
+                width: 27em;
+            }
+
+                li a:hover {
+                    background-color: #111111;
+                }
+
+
+        * {
+            box-sizing: border-box;
+        }
+
+
+
+        .mySlides {
+            display: none;
+        }
+
+        img {
+            vertical-align: central;
+        }
+
+        
+        .slideshow-container {
+            max-width: 600px;
+            max-height: 700px;
+            position: relative;
+            margin: auto;
+        }
+
+
+
+
+        .dot {
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .active {
+            background-color: #717171;
+        }
+
+        /* Fading animation */
+        .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 1.5s;
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+
+        @-webkit-keyframes fade {
+            from {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        @keyframes fade {
+            from {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        input[type=text], input[type=number], select {
+            width: 90%;
+            padding: 15px;
+            margin: 5px 0 22px 0;
+            display: inline-block;
+            border: none;
+            background: #f1f1f1;
+        }
+
+            input[type=text]:focus, input[type=number]:focus, select:focus {
+                background-color: #ddd;
+                outline: none;
+            }
+
+      
+        button:hover {
+            opacity: 1;
+        }
+
+      
+        .search {
+            padding: 14px 20px;
+            background-color: #f44336;
+        }
+
+      
+        .search {
+            float: left;
+            width: 30%;
+            position: center
+        }
+
+
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+
+        h1:hover {
+            font-size: 50px;
+            word-spacing: 40px;
+        }
+
+      
+    </style>
+
+
+
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html">HOME </a> </li>
+                <li><a href="services.html">SERVICES </a> </li>
+                <li><a href="realtors.html">REALTORS </a></li>
+                <li><a href="help.html">HELP</a></li>
+            </ul>
+        </nav>
+
+        <h1 style="font-size:4em; text-align:center; color:floralwhite; letter-spacing:0.6em;">REALM</h1>
+        <h3 style="font-size:2em; text-align:center; color:white; "><marquee>YoUr ChOiCe HoMe....</marquee> </h3>
+
+
+
+
+
+
+    </header>
+    <h1 style="text-align:center;color:white;">WHAT'S IN YOUR MIND????</h1>
+    <table>
+        <tr>
+            <td style="background-color:darkred;"><h1 class="service" style="color:white; font-size:25px; text-align:center;">BUY</h1></td>
+            <td></td>
+            <td style="background-color:darkred; padding-bottom:20px;"><h1 class="service" style="color:white; font-size:25px; text-align:center;">SELL</h1> </td>
+        </tr>
+        <tr>
+            <td>
+                <form style="width:500px; height:700px; background-color:darkred;">
+                    <fieldset style=" background-color:darkred;">
+
+                        <label for="property">PROPERTY TYPE</label>
+                        <select name="property" id="property">
+                            <option value="rapartment">Residential Apartment</option>
+                            <option value="rland">Residential Land</option>
+                            <option value="ihome">Independent Home</option>
+                            <option value="cplot">Commercial Plot</option>
+                            <option value="sapartment">Studio Apartment</option>
+                            <option value="alltypes">All Types</option>
+
+                        </select>
+
+
+                        <label>PROPERTY LOCATION </label><br />
+
+                        <label for="city">CITY </label><br />
+                        <input type="text" name="city" id="city" placeholder="Type the city" />
+                        <label for="province">PROVINCE</label>
+                        <select name="province" id="province">
+                            <option value="all">All Provinces</option>
+                            <option value="one">Alberta</option>
+                            <option value="two">Brtish Columbia</option>
+                            <option value="three">Manitoba</option>
+                            <option value="four">New Brunswick</option>
+                            <option value="five">Newfoundland & Labrador</option>
+                            <option value="six">Northwest Territories</option>
+                            <option value="seven">Nova Scotia</option>
+                            <option value="eight">Nunavat</option>
+                            <option value="nine">Ontario</option>
+                            <option value="ten">Prince Edward Island</option>
+                            <option value="eleven">Quebec</option>
+                            <option value="twelve">Saskatchewan</option>
+                            <option value="thirteen">Yukon</option>
+
+                        </select>
+
+
+                        <label>REQUIREMENTS </label><br />
+
+                        <label for="bedroom">BEDROOMS</label>
+                        <input type="number" name="bedrooms" id="bedrooms" value="1" step="1" min="0" max="7" />
+
+
+                        <label for="bathroom">BATHROOMS</label>
+                        <input type="number" name="bathroom" id="bathroom" value="1" step="1" min="0" max="7" />
+
+
+                        <label for="balcony">BALCONIES</label>
+                        <input type="number" name="balconies" id="balconies" value="1" step="1" min="0" max="7" />
+
+
+                        <label>ADDITIONAL REQUIREMENTS </label></br>
+                        <textarea style="width:300px;height:100px;" name="requirements" id="requirements"></textarea>
+
+                        <div class="clearfix">
+
+                            <button type="submit" class="search">SEARCH</button>
+                        </div>
+                    </fieldset>
+                </form>
+            </td>
+            <td>
+                <div class="slideshow-container">
+
+                    <div class="mySlides ">
+
+                        <img src="interior1.jpeg" style="width:100%">
+
+                    </div>
+
+                    <div class="mySlides ">
+
+                        <img src="interior2.jpeg" style="width:100%">
+
+                    </div>
+
+                    <div class="mySlides ">
+
+                        <img src="interior3.jpeg" style="width:100%; height:100%;">
+
+                    </div>
+
+                </div>
+                <br>
+
+                <div style="text-align:center">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+
+                <script>
+                    var slideIndex = 0;
+                    showSlides();
+
+                    function showSlides() {
+                        var i;
+                        var slides = document.getElementsByClassName("mySlides");
+                        var dots = document.getElementsByClassName("dot");
+                        for (i = 0; i < slides.length; i++) {
+                            slides[i].style.display = "none";
+                        }
+                        slideIndex++;
+                        if (slideIndex > slides.length) { slideIndex = 1 }
+                        for (i = 0; i < dots.length; i++) {
+                            dots[i].className = dots[i].className.replace(" active", "");
+                        }
+                        slides[slideIndex - 1].style.display = "block";
+                        dots[slideIndex - 1].className += " active";
+                        setTimeout(showSlides, 4000); 
+                    }
+                </script>
+            </td>
+            <td>
+                <form style="width:500px; height:700px;  background-color:darkred;">
+                    <fieldset style=" background-color:darkred;">
+                        <label for="property">PROPERTY TYPE</label>
+                        <select name="property" id="property">
+                            <option value="rapartment">Residential Apartment</option>
+                            <option value="rland">Residential Land</option>
+                            <option value="ihome">Independent Home</option>
+                            <option value="cplot">Commercial Plot</option>
+                            <option value="sapartment">Studio Apartment</option>
+                            <option value="alltypes">All Types</option>
+
+                        </select><br />
+                        <label>PROPERTY LOCATION </label></br>
+                        <label for="city">CITY </label><br />
+                        <input type="text" name="city" id="city" placeholder="Type the city" /></br>
+                        <label for="province">PROVINCE</label>
+                        <select name="province" id="province">
+                            <option value="all">All Provinces</option>
+                            <option value="one">Alberta</option>
+                            <option value="two">Brtish Columbia</option>
+                            <option value="three">Manitoba</option>
+                            <option value="four">New Brunswick</option>
+                            <option value="five">Newfoundland & Labrador</option>
+                            <option value="six">Northwest Territories</option>
+                            <option value="seven">Nova Scotia</option>
+                            <option value="eight">Nunavat</option>
+                            <option value="nine">Ontario</option>
+                            <option value="ten">Prince Edward Island</option>
+                            <option value="eleven">Quebec</option>
+                            <option value="twelve">Saskatchewan</option>
+                            <option value="thirteen">Yukon</option>
+
+                        </select><br />
+
+                        <label>FEATURES </label></br>
+                        <label for="bedroom">BEDROOMS</label>
+                        <input type="number" name="bedrooms" id="bedrooms" value="1" step="1" min="0" max="7" /></br>
+                        <label for="bathroom">BATHROOMS</label>
+                        <input type="number" name="bathroom" id="bathroom" value="1" step="1" min="0" max="7" /></br>
+                        <label for="balcony">BALCONIES</label>
+                        <input type="number" name="balconies" id="balconies" value="1" step="1" min="0" max="7" /></br>
+                        <label>ADDITIONAL FEATURES </label></br>
+                        <textarea style="width:300px;height:100px;" name="features" id="features"></textarea>
+                        <div class="clearfix">
+
+                            <button type="submit" class="search">SEARCH</button>
+                        </div>
+                    </fieldset>
+                </form>
+            </td>
+        </tr>
+    </table>
+
+    <footer>
+
+        <nav class="vertical">
+            <ul>
+                <li><a href="home.html">HOME </a> </li>
+                <li><a href="services.html">SERVICES </a> </li>
+                <li><a href="realtors.html">REALTORS </a></li>
+                <li><a href="help.html">HELP</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+</body>
+</html>

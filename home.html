@@ -1,0 +1,270 @@
+﻿<!DOCTYPE html>
+
+<html >
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>REALM</title>
+    <link href="styles1.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
+    <script>
+
+
+        function page() {
+            document.getElementById("signpic").style.display = "none";
+            document.getElementById("signin").style.display = "block";
+
+
+        }
+
+    </script>
+    <style>
+        html {
+            background-color: lightslategray;
+        }
+
+        header {
+            height: 500px;
+            width: 1500px;
+            background-image: url(home24.jpg);
+            background-repeat: no-repeat;
+            background-position: 50% 0%;
+            background-size: 1500px 500px;
+            background-clip: content-box;
+            font-family: 'Cinzel', serif;
+            font-size: 16px;
+            margin: 0px;
+            padding: 0px;
+            
+        }
+        footer {
+            clear: left;
+            width: 100%;
+           
+            color: white;
+            font-size: 0.7em;
+            text-align: center;
+            padding: 25px;
+        }
+
+        body > footer > nav.vertical, body > footer > li {
+            float: left;
+            width: 100%;
+        }
+
+            body > footer > nav.vertical > ul {
+                line-height: 2em;
+            }
+
+        footer nav a {
+            text-decoration: underline;
+        }
+
+        footer a:visited, footer a:link {
+            color: white;
+        }
+
+        footer a:hover, footer a:active {
+            color: white;
+        }
+
+        footer::after {
+            clear: both;
+            content: "";
+            display: table;
+        }
+
+        div#searchbar {
+            clear: left;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0px;
+            padding: 0px;
+            overflow: hidden;
+            background-color: darkred;
+            border-top: 0px;
+        }
+
+        li {
+            float: left;
+        }
+
+            li a, li button {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 10px;
+                line-height: 1.5em;
+                font-size: 1.1em;
+                text-decoration: none;
+                float: left;
+                width: 17em;
+            }
+
+                li a:hover {
+                    background-color: #111111;
+                }
+
+        input[type=text], input[type=password] {
+            width: 100%;
+            padding: 15px;
+            margin: 5px 0 22px 0;
+            display: inline-block;
+            border: none;
+            background: #f1f1f1;
+        }
+
+            input[type=text]:focus, input[type=password]:focus {
+                background-color: #ddd;
+                outline: none;
+            }
+
+        hr {
+            border: 1px solid #f1f1f1;
+            margin-bottom: 25px;
+        }
+
+       
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            opacity: 0.9;
+        }
+
+            button:hover {
+                opacity: 1;
+            }
+
+      
+        .cancelbtn {
+            padding: 14px 20px;
+            background-color: #f44336;
+        }
+
+       
+        .cancelbtn, .signupbtn {
+            float: left;
+            width: 50%;
+        }
+
+       
+        .container {
+            padding: 16px;
+        }
+
+      
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+      
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html">HOME </a> </li>
+                <li><a href="services.html">SERVICES </a> </li>
+                <li><a href="realtors.html">REALTORS </a></li>
+                <li><a href="help.html">HELP</a></li>
+                <li><button type="button" style="float:right; width:80%;" onclick="page();">SIGN IN</button></li>
+            </ul>
+        </nav>
+
+
+        <h1 style="font-size:4em; text-align:center; color:floralwhite; letter-spacing:0.6em;">REALM</h1>
+        <h3 style="font-size:2em; text-align:center; color:white; "><marquee>YoUr ChOiCe HoMe....</marquee> </h3>
+
+
+
+        <div id="searchbar" style="width:50%;height:2em; margin-left:350px;">
+            <input type="text" name="search" id="search" placeholder="Type the location or Keyword" style="width:80%; height:0.8em;" />
+            <input type="submit" value="Search" id="sbtn" name="searchbtn" style="height:2.5em; width:16%; clear:right; margin-top:7px; float:right;" />
+        </div>
+    </header>
+
+   
+
+
+    <iframe width="1000" height="500" src="https://www.youtube.com/embed/2kMQNZrvsUo?rel=0&amp;showinfo=0" frameborder="0" allow=" encrypted-media" allowfullscreen></iframe>
+
+
+    <form id="signin" style="border:1px solid #ccc; width:500px;height:500px;  background-color:darkred; display:none; margin-left:0px; float:right;">
+        <div class="container">
+            <fieldset>
+                <h3 style="text-align:center"> SIGN IN </h3> <hr>
+
+
+                <label for="custname"> UserName </label>
+                <input name="custname" id="custname" type="text" placeholder="Type in your Username" />
+
+
+                <label for="custpass"> Password </label>
+
+
+                <input name="custpass" id="custpass" type="password" />
+
+                <label>
+                    <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+                </label>
+
+                <p>By logging in you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+                <div class="clearfix">
+                    <button type="button" class="cancelbtn">Cancel</button>
+                    <button type="submit" class="signupbtn">Sign In</button>
+                </div>
+
+                Don't have an account? Create a new one!!!<input type="button" name="accountbtn" id="accountbtn" value="New Account" />
+            </fieldset>
+        </div>
+    </form>
+
+    <img id="signpic" onclick="page();" style=" width:500px; height:500px;  float:right;" src="sign.jpeg" />
+    </main>
+    <section>
+
+        <table style="clear:left;float:left;">
+            <tr>
+                <th colspan="6"><h1 style="color:white; font-size:34px; font-family: 'Cinzel', serif;"> NEW LISTINGS</h1></th>
+            </tr>
+            <tr>
+                
+                <td><figure style="width:280px; height:250px"><img id="picone" src="home2.jpeg" style="height:280px;width:310px;" /></figure></td>
+                <td><figure style="width:280px; height:250px"><img id="pictwo" src="home3.jpeg" style="height:280px;width:310px;" /></figure></td>
+                <td><figure style="width:280px; height:250px"><img id="picthree" src="home4.jpeg" style="height:280px;width:310px;" /></figure></td>
+                <td><figure style="width:280px; height:250px"><img id="picfour" src="home5.jpeg" style="height:280px;width:310px;" /></figure></td>
+              
+
+
+
+            </tr>
+        </table>
+
+
+    </section>
+    <footer>
+
+        <nav class="vertical">
+            <ul>
+                <li><a href="home.html">HOME </a> </li>
+                <li><a href="services.html">SERVICES </a> </li>
+                <li><a href="realtors.html">REALTORS </a></li>
+                <li><a href="help.html">HELP</a></li>
+               
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>
